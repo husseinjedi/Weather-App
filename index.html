@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App Project | Salawu Hussein</title>
+    <link rel="icon" type="image/x-icon" href="data:image/jpeg;base64,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">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="bg-success text-center py-3">
+      <h1 class="fw-bold h3 text-white my-1">Weather Dashboard</h1>
+    </header>
+    <div class="container-fluid my-4 weather-data">
+      <div class="row">
+        <div class="col-xxl-3 col-md-4 px-lg-4">
+          <h5 class="fw-bold">Enter a City Name</h5>
+          <input type="text" id="city-input" class="py-2 form-control" placeholder="E.g., New York, London, Tokyo">
+          <button id="search-btn" class="btn btn-success py-2 w-100 mt-3 mb-2">Search</button>
+        </div>
+        <div class="col-xxl-9 col-md-8 mt-md-1 mt-4 pe-lg-4">
+          <div class="current-weather bg-success text-white py-2 px-4 rounded-3">
+            <div class="mt-3 d-flex justify-content-between">
+              <div>
+                <h3 class="fw-bold">_______ ( ______ )</h3>
+                <h6 class="my-3 mt-3">Temperature: __°C</h6>
+                <h6 class="my-3">Wind: __ M/S</h6>
+                <h6 class="my-3">Humidity: __%</h6>
+              </div>
+          </div>
+          </div>
+          <h4 class="fw-bold my-4">5-Day Forecast</h4>
+          <div class="days-forecast row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-5 justify-content-between">
+            <div class="col mb-3">
+              <div class="card border-0 bg-secondary text-white">
+                <div class="card-body p-3 text-white">
+                  <h5 class="card-title fw-semibold">( ______ )</h5>
+                  <h6 class="card-text my-3 mt-3">Temp: __°C</h6>
+                  <h6 class="card-text my-3">Wind: __ M/S</h6>
+                  <h6 class="card-text my-3">Humidity: __%</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="card border-0 bg-secondary text-white">
+                <div class="card-body p-3 text-white">
+                  <h5 class="card-title fw-semibold">( ______ )</h5>
+                  <h6 class="card-text my-3 mt-3">Temp: __°C</h6>
+                  <h6 class="card-text my-3">Wind: __ M/S</h6>
+                  <h6 class="card-text my-3">Humidity: __%</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="card border-0 bg-secondary text-white">
+                <div class="card-body p-3 text-white">
+                  <h5 class="card-title fw-semibold">( ______ )</h5>
+                  <h6 class="card-text my-3 mt-3">Temp: __°C</h6>
+                  <h6 class="card-text my-3">Wind: __ M/S</h6>
+                  <h6 class="card-text my-3">Humidity: __%</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="card border-0 bg-secondary text-white">
+                <div class="card-body p-3 text-white">
+                  <h5 class="card-title fw-semibold">( ______ )</h5>
+                  <h6 class="card-text my-3 mt-3">Temp: __°C</h6>
+                  <h6 class="card-text my-3">Wind: __ M/S</h6>
+                  <h6 class="card-text my-3">Humidity: __%</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="card border-0 bg-secondary text-white">
+                <div class="card-body p-3 text-white">
+                  <h5 class="card-title fw-semibold">( ______ )</h5>
+                  <h6 class="card-text my-3 mt-3">Temp: __°C</h6>
+                  <h6 class="card-text my-3">Wind: __ M/S</h6>
+                  <h6 class="card-text my-3">Humidity: __%</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
